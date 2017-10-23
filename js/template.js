@@ -40,3 +40,21 @@ function palindrome(str) {
 }
 
 palindrome("_eye");
+
+//finding the longest word in the sentence
+
+function findLongestWord(str) {
+
+    var sentence = str.split(" ");
+    var longest = 0;
+    var word = null;
+    for (var i = 0; i < sentence.length; i++) {
+        if (longest < sentence[i].length) {
+            longest = sentence[i].length;
+            word = sentence[i];
+        }
+    }
+    return longest;
+}
+
+findLongestWord("The quick brown fox jumped over the lazy dog");
