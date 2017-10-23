@@ -58,3 +58,11 @@ function findLongestWord(str) {
 }
 
 findLongestWord("The quick brown fox jumped over the lazy dog");
+
+// Changing the first letter of every word in a sentence to Captial letter and the rest to lower letter
+
+function titleCase(str) {
+    return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+}
+
+console.log(titleCase("I'm a little tea pot"));
