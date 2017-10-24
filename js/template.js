@@ -108,3 +108,19 @@ function confirmEnding(str, target) {
 
 
 confirmEnding("Bastian", "n");
+
+//Repeating a string with given number
+
+
+function repeatStringNumTimes(str, num) {
+    var product = String(str);
+
+    if(num < 0){
+        repeat = "";
+        return repeat;
+    }
+    var repeat = product.repeat(num);
+    return repeat;
+}
+
+repeatStringNumTimes("abc", 3);
