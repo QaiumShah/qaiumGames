@@ -89,3 +89,22 @@ function largestOfFour(arr) {
 }
 
 largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
+
+//confirming the ending of the string
+
+function confirmEnding(str, target) {
+    var fist = str.substr(-1);
+    var sec = str.substring(str.length -4);
+    if(fist == target){
+        return true;
+    }else if(sec == target){
+        return true;
+    }
+    else{
+        return false;
+    }
+
+}
+
+
+confirmEnding("Bastian", "n");
